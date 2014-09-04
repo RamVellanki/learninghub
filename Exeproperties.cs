@@ -17,14 +17,6 @@ namespace Exeproperties
         private static string tempFolder = Path.GetTempPath() + "ExePropGen" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
         
         /// <summary>
-        /// Default constructor
-        /// </summary>
-        public ExePropGenerator()
-        {
-            InstallerProps = new Dictionary<string,string>(StringComparer.OrdinalIgnoreCase);
-        }
-
-        /// <summary>
         /// Constructor. Takes EXE file path as an input
         /// </summary>
         /// <param name="strInExePath"></param>
